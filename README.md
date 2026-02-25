@@ -292,27 +292,3 @@ Widget references accessed across functions:
 name_entry, question_label, option_buttons, selected, result_label, topic_frame, quiz_frame, result_frame (created during GUI setup)
 
 ### Testing Section 
-
-to ensure that he final product the application performs as planned and meets the requirment, I followed a startegic testing approach. My testing combined both manual testing and automated unit testing. Using both methods allowed me to identify functional issues, verify expected behaviour, and increase overall confidence in the stability of the application. 
-
-### Manual Testing 
-
-I used manual testing to verify:
-GUI behaviour (buttons, frames, navigation)
-User input handling (name entry, answer selection)
-CSV file loading
-Result calculations
-Error/warning messages
-Overall user experience
-
-Manual testing is essential for GUI applications because it validates that the user interface responds correctly to human interaction (e.g., clicking buttons, selecting options). It was one of the best choice as Tkinter’s GUI behaviour can only be fully validated through hands‑on interaction. It also Ensures the application feels intuitive and bug‑free from the user’s point of view.
-
-Below is the table to summeries thing I tested and thier outcome 
-
-### Unittesting 
-
-Below is an example of the unit test written for the Question class:
-
-
-
-
