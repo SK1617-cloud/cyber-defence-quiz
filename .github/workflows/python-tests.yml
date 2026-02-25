@@ -21,7 +21,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-tk
+          sudo apt-get install -y python3-tk xvfb
 
       - name: Install Python packages
         run: |
@@ -30,4 +30,4 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest discover
+          xvfb-run python -m unittest discover
