@@ -161,7 +161,7 @@ def show_frame(frame):
 ```
 This Manages switching between the different frames (screens) using Tkinter.
 
-## Quiz Flow 
+### Quiz Flow 
 In this code you can see the quiz flow funtions. These functions orchestrate the quiz lifecycle: start → ask → submit → finish → results. 
 ```
 # QUIZ FLOW 
@@ -227,7 +227,7 @@ def go_to_topic():
 
     show_frame(topic_frame)
 ```
-Functions in this section
+### Functions in this section
 
 start_quiz(filename)
 Loads questions from a CSV, initializes Quiz, shows first question, and navigates to the quiz screen.
@@ -241,7 +241,7 @@ go_to_topic()
 Ensures name is entered before allowing navigation to the topic selection screen
 
 
-GUI using Tkinter framework
+### GUI using Tkinter framework
 
 Defines the main window, four frames (screens), the background image, and widgets.
 Key GUI Elements
@@ -269,7 +269,7 @@ Result screen widgets:
 result_label (final score and percentage)
 Exit button → root.destroy
 
-Whole prgram execution
+### Whole prgram execution
 
 ```
 if __name__ == "__main__":
@@ -278,6 +278,41 @@ if __name__ == "__main__":
 ```
 This code Raises the Name screen first and starts the Tk event loop (mainloop) so the UI is interactive.
 
+### Constants and Globals Used 
+
+Color constants:
+WHITE = "#FFFFFF"
+GRAY = "#666666"
+
+Global quiz state:
+
+quiz (set in start_quiz)
+
+Widget references accessed across functions:
+name_entry, question_label, option_buttons, selected, result_label, topic_frame, quiz_frame, result_frame (created during GUI setup)
+
 ### Testing Section 
+
+to ensure that he final product the application performs as planned and meets the requirment, I followed a startegic testing approach. My testing combined both manual testing and automated unit testing. Using both methods allowed me to identify functional issues, verify expected behaviour, and increase overall confidence in the stability of the application. 
+
+### Manual Testing 
+
+I used manual testing to verify:
+GUI behaviour (buttons, frames, navigation)
+User input handling (name entry, answer selection)
+CSV file loading
+Result calculations
+Error/warning messages
+Overall user experience
+
+Manual testing is essential for GUI applications because it validates that the user interface responds correctly to human interaction (e.g., clicking buttons, selecting options). It was one of the best choice as Tkinter’s GUI behaviour can only be fully validated through hands‑on interaction. It also Ensures the application feels intuitive and bug‑free from the user’s point of view.
+
+Below is the table to summeries thing I tested and thier outcome 
+
+### Unittesting 
+
+Below is an example of the unit test written for the Question class:
+
+
 
 
