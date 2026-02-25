@@ -257,6 +257,5 @@ tk.Button(
 
 # START
 if __name__ == "__main__":
-    root = Tk()
     show_frame(name_frame)
     root.mainloop()
