@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import Tk, messagebox
 from PIL import Image, ImageTk
 import csv
 import os
@@ -254,7 +254,6 @@ tk.Button(
     command=root.destroy,
     width=20
 ).pack(pady=20)
-
 
 # START
 if __name__ == "__main__":
