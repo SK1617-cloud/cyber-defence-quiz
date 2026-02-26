@@ -78,7 +78,7 @@ Digram.net - used for class diagram
 
 ### Code Design Document
 
-![alt text](image-1.png)
+<img width="394" height="496" alt="Screenshot 2026-02-26 at 18 24 58" src="https://github.com/user-attachments/assets/71a3257c-7098-4660-b2e9-f016e5c231b5" />
 
 ### Development Section 
 This section will explain how the application works, breaking down the code in main modules and functions in the program. 
