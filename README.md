@@ -313,8 +313,8 @@ Overall user experience
 
 Manual testing is essential for GUI applications because it validates that the user interface responds correctly to human interaction (e.g., clicking buttons, selecting options). It was one of the best choice as Tkinter’s GUI behaviour can only be fully validated through hands‑on interaction. It also Ensures the application feels intuitive and bug‑free from the user’s point of view. 
  
-Below is the table to summeries thing I tested and thier outcome  
-
+Below is the table to summeries things I tested and thier outcome  
+can 
  
 
 
@@ -388,6 +388,15 @@ Finally, the user can click Exit to close the application safely. The interface 
 
 ## Evaluation Section
 
+The application was developed to address the awareness of increasing cyber threats and crimes around the world and increasing awareness among the employees. The quiz was a engaging way to do that, which was a success as it meets its core objectives. however, evaluating the project allows identification of strengths, limitations, and opportunities for future improvement. 
+
+One of the key strengths of the quiz application is its simple and intuitive user interface. Users can quickly enter their name, choose a topic, and begin the quiz without prior technical knowledge. The use of Tkinter frames and clear navigation ensures that users do not feel overwhelmed. Additionally, the quiz system’s use of CSV files makes the content easy to update, allowing new questions to be added without modifying the main code. This design decision supports long term flexibility and maintainability.
+
+The technical perspective, the quiz logic is accurate and reliable. The Question and Quiz classes perform well, and the unit tests confirmed that answer validation behaves correctly under different conditions. Manual testing also demonstrated that the application handles user mistakes effectively, such as submitting without selecting an answer or attempting to continue without entering a name. These built in safeguards enhance the robustness and user friendliness of the system.
+
+However, the application still has some limitations. Such as the lack of visual feedback, right now beyond text, warning pop-ups and graphical background the application does not have anything which is mor engaging. Having more visuals will allow more engagement. Additionally, the system does not yet store historical results in a user profile or allow users to review answers after completing the quiz. Implementing these enhancements could further support learning outcomes for staff.
+
+In summary, the Cyber Defence Quiz is a functional, reliable, and user friendly product that meets its intended purpose. The evaluation highlights its strengths in usability and logic accuracy, while also identifying future improvements that could enhance interactivity and educational value.
 
 
 
