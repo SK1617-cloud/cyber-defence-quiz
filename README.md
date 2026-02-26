@@ -10,14 +10,13 @@ This MVP is relevant to the workplace as it provides an interactive and measurab
 
 ## Design Section
 ### GUI Design 
- the GUI was made using Figma to demonstarte the user interface and layout of the application before the development begins. the design focuses on making it relevent to organisations gudeline and layouts. The application will be using blue grey colour scheme as it matches the BMW brand style. The application will also be using calvice font formate as it best matches the organisations policies. The design focuses on simplicity, clarity, and ease of navigation to ensure an accessible user experience.
+The GUI was made using Figma to demonstrate the user interface and layout of the application before the development begins. the design focuses on making it relevant to organisations guidelines and layouts. The application will be using blue grey colour scheme as it matches the BMW brand style. The application will also be using calvice font format as it best matches the organisations policies. The design focuses on simplicity, clarity, and ease of navigation to ensure an accessible user experience.
 
 The user Journey can be seen in the image below:
 
 ![alt text](image.png)
 
-you can clearly see the user journey in the image attched. 
-the application will start off with asking you to enter your name so that app will understand who is using it and easier to store the results. on the second screen you allows users to select the topic they would like to learn about. on the next screen asper the topic it will display the multiple choice questions for users to answer. on the last screen they can see thier results.
+You can clearly see the user journey in the image attached. The application will start off with asking you to enter your name so that app will understand who is using it and easier to store the results. On the second screen you allow users to select the topic they would like to learn about. On the next screen as per, the topic it will display the multiple-choice questions for users to answer. on the last screen they can see their results.
 
  ## Functional and Non-functional Requirements 
 
@@ -80,8 +79,6 @@ Digram.net - used for class diagram
 ### Code Design Document
 
 ![alt text](image-1.png)
-
-
 
 ### Development Section 
 This section will explain how the application works, breaking own the code in main modules and functions in the program. 
@@ -333,8 +330,9 @@ Below is the table to summeries things I tested and thier outcomes
 
 ### Unittesting  
 
+Unit testing helps check that the important parts of the program work the way they should. In this quiz app, the tests make sure that answering questions, scoring, and moving to the next question all work correctly. This helps prevent mistakes in the program, even if you change or add new features later.
 
-
+Am using Python’s built‑in unittest library because it is simple and already included with Python. This means you don’t need to install anything extra to run the tests. It works everywhere, on any computer that has Python, which makes things easier.unittest is also easy to understand. It uses clear test methods and simple checks like "is this true?" or "are these two things equal?" Because of this, even beginners can read and write tests without getting confused.Other testing tools exist, such as pytest, but they can be more complicated and require extra installation. For a small project like this quiz app, unittest is more than enough. It keeps things clean, simple, and easy to manage.
 
 Below is an example of the unit test written for the Question class:
 
@@ -386,7 +384,6 @@ if __name__ == "__main__":
     unittest.main()
     
 ```
-
 
 
 ## Documentation Section
