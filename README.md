@@ -360,7 +360,8 @@ class TestQuiz(unittest.TestCase):
         self.quiz.submit_answer("A")
         self.assertEqual(self.quiz.current, 1)
 
-    def test_finished(self):
+    def test_finished(self):Below is an example of the unit test written for the Question class:
+
         self.quiz.submit_answer("A")
         self.quiz.submit_answer("B")
         self.assertTrue(self.quiz.finished())
@@ -372,14 +373,23 @@ if __name__ == "__main__":
 ```
 ## Documentation Section
 
-User documentation should explain how end users, such as staff within your
-organisation, can interact with the quiz application, whereas technical documentation
-should outline steps such as running tests locally and explain parts of the code.
+### User Document 
+
+The quiz application has been designed to provide employees with simple, clear and interactive way to test their knowledge for cyber security topics. This part of the document explains how end users can navigate and interact with the quiz application, from launching the application to viewing the results. 
+
+To begin, users simply open the application, which automatically loads the Name Entry Screen. Here, they must type their full name into the input box. This name is important, as it is later used to record quiz results. Once the name is entered, the user clicks the Submit button. If no name is provided, a warning message will appear to remind the user to enter one before continuing.
+
+After submitting their name, users are taken to the Topic Selection Screen. The quiz currently includes multiple cybersecurity topics, such as “Phishing & Email Security” and “Passwords & Data Protection.” Users select a topic by clicking the appropriate button. This action loads the questions for that topic from the system’s CSV files.
+
+Next, the user is taken to the quiz section where each question is provided with a multiple-choice answer. Users much select one answer before clicking the submit button. If they attempt to submit without selecting an answer, the system displays a warning message. After submitting, the quiz automatically moves to the next question until all have been answered.
+
+When the quiz is completed, the user is shown the Results Screen, where their total score and percentage are displayed. These results are also automatically saved to a file for record keeping, allowing managers or HR to review staff performance.
+Finally, the user can click Exit to close the application safely. The interface is designed to be intuitive, requiring no prior technical knowledge, making it suitable for all staff members.
 
 ## Evaluation Section
 
-The evaluation section should explain what went well during the development of the
-project and what could have been improved. The evaluation section should be written
-in a genuine, reflective tone. As the README follows the conventions of software
-documentation, hyperlinks should be used for references instead of Harvard
-referencing.
+
+
+
+
+
