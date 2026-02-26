@@ -313,13 +313,28 @@ Overall user experience
 
 Manual testing is essential for GUI applications because it validates that the user interface responds correctly to human interaction (e.g., clicking buttons, selecting options). It was one of the best choice as Tkinter’s GUI behaviour can only be fully validated through hands‑on interaction. It also Ensures the application feels intuitive and bug‑free from the user’s point of view. 
  
-Below is the table to summeries things I tested and thier outcome  
-can 
- 
+Below is the table to summeries things I tested and thier outcomes 
 
-
+| Test Case ID | Description | Expected Result | Status |
+|--------------|-------------|------------------|--------|
+| TC-001 | Launch application window | Name screen loads successfully | Pass |
+| TC-002 | Empty name validation | Warning popup appears asking for name |  Pass  |
+| TC-003 | Valid name submission | User moves to topic selection screen |  Pass  |
+| TC-004 | Load Topic 1 questions | First question is displayed without error | Pass  |
+| TC-005 | Load Topic 2 questions | First question is displayed without error | Pass |
+| TC-006 | Prevent submitting without answer | Warning popup appears | Pass |
+| TC-007 | Correct answer scoring | Score increases by 1 | Pass |
+| TC-008 | Wrong answer scoring | Score stays the same | Pass |
+| TC-009 | Quiz progression | Moves to next question until finished | Pass |
+| TC-010 | Display final score & percentage | Final results screen shows correct values | Pass |
+| TC-011 | Save results to CSV | Entry is added to `results.csv` | Pass |
+| TC-012 | Exit button closes app | Application closes successfully | Pass |
+| TC-013 | Background image loading | Background visible on all screens | Pass |
 
 ### Unittesting  
+
+
+
 
 Below is an example of the unit test written for the Question class:
 
@@ -371,6 +386,9 @@ if __name__ == "__main__":
     unittest.main()
     
 ```
+
+
+
 ## Documentation Section
 
 ### User Document 
