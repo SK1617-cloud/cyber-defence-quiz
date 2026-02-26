@@ -292,3 +292,94 @@ Widget references accessed across functions:
 name_entry, question_label, option_buttons, selected, result_label, topic_frame, quiz_frame, result_frame (created during GUI setup)
 
 ### Testing Section 
+
+to ensure that he final product the application performs as planned and meets the requirment, I followed a startegic testing approach. My testing combined both manual testing and automated unit testing. Using both methods allowed me to identify functional issues, verify expected behaviour, and increase overall confidence in the stability of the application.  
+
+### Manual Testing  
+
+ I used manual testing to verify: 
+
+GUI behaviour (buttons, frames, navigation) 
+
+User input handling (name entry, answer selection) 
+
+CSV file loading 
+
+Result calculations 
+
+Error/warning messages 
+
+Overall user experience 
+
+Manual testing is essential for GUI applications because it validates that the user interface responds correctly to human interaction (e.g., clicking buttons, selecting options). It was one of the best choice as Tkinter’s GUI behaviour can only be fully validated through hands‑on interaction. It also Ensures the application feels intuitive and bug‑free from the user’s point of view. 
+ 
+Below is the table to summeries thing I tested and thier outcome  
+
+ 
+
+
+
+### Unittesting  
+
+Below is an example of the unit test written for the Question class:
+
+```
+import unittest
+from main import Question, Quiz
+
+
+class TestQuestion(unittest.TestCase):
+
+    def test_correct_answer(self):
+        q = Question("Test?", ["A", "B", "C", "D"], "A")
+        self.assertTrue(q.is_correct("A"))
+
+    def test_wrong_answer(self):
+        q = Question("Test?", ["A", "B", "C", "D"], "A")
+        self.assertFalse(q.is_correct("B"))
+
+
+class TestQuiz(unittest.TestCase):
+
+    def setUp(self):
+        self.questions = [
+            Question("Q1", ["A", "B", "C", "D"], "A"),
+            Question("Q2", ["A", "B", "C", "D"], "B")
+        ]
+        self.quiz = Quiz(self.questions)
+
+    def test_score_increases_on_correct(self):
+        self.quiz.submit_answer("A")
+        self.assertEqual(self.quiz.score, 1)
+
+    def test_score_not_increase_on_wrong(self):
+        self.quiz.submit_answer("C")
+        self.assertEqual(self.quiz.score, 0)
+
+    def test_question_index_increases(self):
+        self.quiz.submit_answer("A")
+        self.assertEqual(self.quiz.current, 1)
+
+    def test_finished(self):
+        self.quiz.submit_answer("A")
+        self.quiz.submit_answer("B")
+        self.assertTrue(self.quiz.finished())
+
+
+if __name__ == "__main__":
+    unittest.main()
+    
+```
+## Documentation Section
+
+User documentation should explain how end users, such as staff within your
+organisation, can interact with the quiz application, whereas technical documentation
+should outline steps such as running tests locally and explain parts of the code.
+
+## Evaluation Section
+
+The evaluation section should explain what went well during the development of the
+project and what could have been improved. The evaluation section should be written
+in a genuine, reflective tone. As the README follows the conventions of software
+documentation, hyperlinks should be used for references instead of Harvard
+referencing.
