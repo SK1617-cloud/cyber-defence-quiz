@@ -240,11 +240,11 @@ Ensures the name is entered before allowing navigation to the topic selection sc
 
 ### GUI using the Tkinter framework
 
-Defines the main window, four frames (screens), the background image, and widgets.
 Key GUI Elements
 
-Window: root = tk.Tk() → sets title, fixed size, no resize.
-Background: PIL.Image → bmw_background.jpg resized to 700x500, used on every frame.
+Window: root = tk.Tk() - sets title, fixed size, no resize.
+Background: PIL.Image - bmw_background.jpg resized to 700x500, used on every frame.
+
 Frames (screens):
 
 name_frame – name entry
@@ -253,18 +253,18 @@ quiz_frame – question + options
 result_frame – final score
 All frames are layered and switched with show_frame.
 
-Name screen widgets: Label, Entry (name_entry), Button (Submit → go_to_topic)
+Name screen widgets: Label, Entry (name_entry), Button (Submit)
 Topic screen widgets: Two Buttons to start the quiz with Phishing.csv or Password.csv
-Quiz screen widgets:
 
 question_label (multi-line, wrapped)
 selected = tk.StringVar() to store the selected option
-option_buttons → four RadioButtons bound to selected
-Submit button → submit_answer
+option_buttons - four RadioButtons bound to selected
+Submit button - submit_answer
 
 Result screen widgets:
+
 result_label (final score and percentage)
-Exit button → root. destroy
+Exit button - root. destroy
 
 ### Whole program execution
 
@@ -281,20 +281,13 @@ Colour constants:
 WHITE = "#FFFFFF"
 GRAY = "#666666"
 
-Global quiz state:
-
-quiz (set in start_quiz)
-
-Widget references accessed across functions:
-name_entry, question_label, option_buttons, selected, result_label, topic_frame, quiz_frame, result_frame (created during GUI setup)
-
 ### Testing Section 
 
 To ensure that the final product performs as planned and meets the requirements, I followed a strategic testing approach. My testing combined both manual testing and automated unit testing. Using both methods allowed me to identify functional issues, verify expected behaviour, and increase overall confidence in the stability of the application.  
 
 ### Manual Testing  
 
- I used manual testing to verify: 
+I used manual testing to verify: 
 
 GUI behaviour (buttons, frames, navigation) 
 
